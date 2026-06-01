@@ -1,0 +1,854 @@
+{
+  "intents": [
+    {
+      "tag": "noanswer",
+      "patterns": [ "*" ],
+      "responses": [
+        "Sorry, can't understand you",
+        "Sorry, I am not programmed to answer that question",
+        "Not sure I understand you"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hi",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Namaste",
+        "yo"
+      ],
+      "responses": [
+        "Hello, how can I help?",
+        "Good to see you, how can I help?",
+        "Hi there, how can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Get lost",
+        "Till next time",
+        "bbye"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "how you could help me?",
+        "what you can do?",
+        "what help you provide?",
+        "how you can be helpful?",
+        "what support is offered"
+      ],
+      "responses": [
+        "\n I am a customer service chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Respond to questions about admission and scholarship inquiries \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Joke",
+        "Make me laugh"
+      ],
+      "responses": [
+        "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+        "I ate a clock yesterday, it was very time-consuming",
+        "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+        "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+        "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+        "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+        "What do you call a snowman with a suntan? A puddle.",
+        "How does a penguin build a house? Igloos it together",
+        "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+        "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+        "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+      ],
+      "context": [
+        "jokes"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "who are you",
+        "what are you",
+        "what is your name",
+        "what am i chatting to"
+      ],
+      "responses": [
+        "I am Bot, a Costumer Service Chatbot"
+      ]
+    },
+    {
+      "tag": "whatsup",
+      "patterns": [
+        "whats up",
+        "wazzup",
+        "how are you",
+        "sup",
+        "how you doing"
+      ],
+      "responses": [
+        "All good..What about you?",
+        "Doing all right..What about you?"
+      ]
+    },
+    {
+      "tag": "haha",
+      "patterns": [
+        "haha",
+        "lol",
+        "rofl",
+        "lmao",
+        "AHAHAHAHA",
+        "hahahahaha",
+        "thats funny"
+      ],
+      "responses": [
+        "Glad I could make you laugh !"
+      ]
+    },
+    {
+      "tag": "programmer",
+      "patterns": [
+        "Who made you",
+        "who designed you",
+        "who programmed you"
+      ],
+      "responses": [
+        "I was made by a group of Computer Science students from La Salle University for their Thesis."
+      ]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+
+        "you are dumb",
+        "shut up",
+        "idiot",
+        "fuck",
+        "bitch",
+        "shut up",
+        "hell",
+        "stupid",
+        "idiot",
+        "dumb ass",
+        "asshole",
+        "fucker"
+      ],
+      "responses": [
+        "Well that hurts :(, please refrain from saying it.",
+        "Maintaining decency would be appreciated"
+      ]
+    },
+    {
+      "tag": "exclaim",
+      "patterns": [
+        "awesome",
+        "great",
+        "i know",
+        "ok",
+        "yeah",
+        "okay"
+      ],
+      "responses": [
+        "Yeah!"
+      ]
+    },
+
+    {
+      "tag": "hours",
+      "patterns": [
+        "working hours",
+        "what is the workings hours",
+        "office hours",
+        "working days",
+        "open during saturday"
+      ],
+      "responses": [
+        "The University is open from 8:00am-5:00pm Monday-Saturday!"
+      ]
+    },
+    {
+      "tag": "program_inquiry",
+      "patterns": [
+        "Can you provide all available courses offered by the school?",
+        "Is this course available?",
+        "courses available",
+        "What are the courses and programs available in La Salle University - Ozamiz?",
+        "Can you provide information on available courses?",
+        "Based on my grade, what courses am i capable of?",
+        "What courses do you offer?",
+        "Is there any other course that can be provided?",
+        "What is your recommendable course?",
+        "Which courses are currently being offered to students?",
+        "What other courses did you offer ?",
+        "available programs",
+        "graduate and undergraduate programs",
+        "programs offered",
+        "list of programs",
+        "available courses",
+        "courses offered",
+        "what are the available courses",
+        "Can you provide a list of all the courses offered?",
+        "What types of courses do you have?",
+        "Are there any new courses available?",
+        "Which subjects or disciplines are covered in the courses?",
+        "Can you tell me about the available learning programs?",
+        "How many courses can I choose from?",
+        "Are there any upcoming courses?"
+      ],
+      "responses": [
+        "Are you looking for graduate or undergraduate programs? (Please specify whether 'graduate' or 'undergraduate')"
+      ]
+    },
+    {
+      "tag": "graduate_programs",
+      "patterns": [
+        "graduate",
+        "postgraduate",
+        "master's programs",
+        "doctoral programs",
+        "available graduate programs",
+        "graduate programs",
+        "graduate courses",
+        "What graduate programs do you offer?",
+        "Tell me about your master's programs.",
+        "List of graduate courses at your university.",
+        "Tell me about the graduate courses"
+      ],
+      "responses": [
+        "Here are some of our graduate programs: \n We offer Graduate School of Business and Graduate School of Education \n For Graduate School of Business \n - Doctor in Business Administration \n - Master in Business Administration(Non-Thesis Program) \n - Master in Public Administration(Non-Thesis Program \n For Graduate School of Education \n - Doctor of Philosophy in Education(Major in Educational Management) \n - Master of Arts in Education(with Thesis program) \n - Master in Education(Non-Thesis Program) Majors in : Cultural Education, Educational Management, English, Filipino, Guidance and Counseling, Mathematics, Physical Education,  Science, Social Studies, Teaching Arts "
+      ],
+      "context": [ "graduate_programs" ]
+    },
+    {
+      "tag": "undergraduate_programs",
+      "patterns": [
+        "undergraduate",
+        "bachelor's programs",
+        "courses for undergraduates",
+        "list of undergraduate programs",
+        "undergraduate programs",
+        "undergraduate courses",
+        "What undergraduate programs do you offer?",
+        "Tell me about your bachelor's programs",
+        "List of undergraduate courses at your university.",
+        "provide information on your undergraduate programs?",
+        "Tell me about the undergraduate courses"
+      ],
+      "responses": [
+        "Here are some of our undergraduate programs: College of Arts and Sciences \n - Bachelor of Arts in English Language Studies(BAELS) \n -Bachelor of Arts in Political Science(BAPolSci) \n -Bachelor of Science in Psychology(BSPsych) \n -Bachelor of Science in Social Work(BBSW) \n College of Computer Studies, Engineering and Architecture \n -Bachelor of Science in Civil Engineering(BSCE) \n -Bachelor of Science in Architecture(BSArch) \n -Bachelor of Science in Electrical Engineering(BSEE) \n -Bachelor of Science in Electornics Engineering(BSECE) \n -Bachelor of Science in Computer Engineering(BSCpe), \n -Bachelor in Science of Science in Geodetic Engineering(BSGE) \n -Bacherlor of Science in Computer Science(BSCS) \n -Bachelor of Science in Information Technology(BSIT) \n -Bachelor of Librar and Information Science(BLIS) \n College of Teacher Education \n -Bachelor of Elementary Education (BEED) \n -Bachelor of Secondary Education(BSED) Majors in: English, Filipino, Mathematics, Science, Social Studies \n -Bachelor of Physical Education(BPED) \n -Bachelor of Technology and Livelihood Education (BTLED) Major in Home Economics \n -Bachelor of Special Needs Education \n College of Business and Accountancy \n -Bachelor of Science in Business Administration(BSBA) Majors in: Financial Management, Marketing Management \n -Bachelor of Science in Accounting Information System (BSAIS) \n -Bachelor of Science in Accountancy (BSAc) \n College of Tourism and Hospitality Management \n -Bachelor of Science in Hospitality Management(BSHM) \n -Bachelor of Science in Tourism Management(BSTM) \n College of Nursing \n -Bachelor of Science in Nursing(BSN) \n College of Criminal Justice Education \n -Bachelor of Science in Criminilogy(BSCrim)"
+      ],
+      "context": [ "undergraduate_programs" ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact information of the school",
+        "contact info of the university",
+        "contact number",
+        "how can I contact"
+      ],
+      "responses": [
+        "You can contact the University through:\n email: info@lsu.edu.ph \n contact number:(088) 521-1010"
+      ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [
+        "You are awesome",
+        "you are the best",
+        "you are great",
+        "you are good"
+      ],
+      "responses": [
+        "Thank you! Is there anything I can help?"
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "the school located",
+        "location of the university"
+      ],
+      "responses": [
+        "La Salle St. Barangay Aguada Ozamiz City, Misamis Occidental, Philippines (https://www.google.com/maps/@8.148889,123.8452665,3a,75y,99.11h,92.74t/data=!3m7!1e1!3m5!1sC1enFqr4v4G6-Hhz6t4wdw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DC1enFqr4v4G6-Hhz6t4wdw%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D126.00039%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu)"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "no",
+        "nope"
+      ],
+      "responses": [
+        "ok"
+      ]
+    },
+    {
+      "tag": "event",
+      "patterns": [
+        "events",
+        "school events",
+        "university events",
+        "what are the school events"
+      ],
+      "responses": [
+        "For event detail visit (https://lsu.edu.ph/events)"
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": [
+        "Could you provide information about the admission process?",
+        "What is your process in admission?",
+        "how to enroll",
+        "How do I enroll?",
+        "What are the steps to take during the admission process and what are the requirements?",
+        "Excuse me is this the admissions office? I have a paper to process",
+        "can you provide details about the admission process?",
+        "How do you do this admission process? ",
+        "Could you please explain the steps involved in the admission process?",
+        "What are the requirements for this admission?",
+        "What will be the process for admission in this university?",
+        "What are the enrollment process?",
+        "Can you provide information on the admission process for this program?",
+        "What are the requirements for admission?",
+        "What processes will I go through?",
+        "Asking for steps on where to start",
+        "What are the documents required for the admission application?",
+        "How does the admission process work?",
+        "What are the steps for the admission? ",
+        "What are the requirements for your admission?",
+        "admission process",
+        "How to apply for admission",
+        "Tell me about admission",
+        "process for admission",
+        "what is the admission process?",
+        "what is the admission process of La Salle",
+        "Can you walk me through the general admission process",
+        "How does the admission process work at your university?",
+        "What are the steps involved in applying for admission?",
+        "Tell me about the overall admission process.",
+        "I'm curious about how to get admitted. What's the process like?",
+        "Could you provide an overview of the admission procedure?",
+        "What is the standard procedure for applying to your university?",
+        "Can you explain how students typically go through the admission process here?",
+        "Where should I start with the admission process?",
+        "What's the general outline of the admission steps I need to follow?",
+        "I'm interested in applying. What does the admission process entail?",
+        "Could you give me an idea of what the admissions journey looks like?",
+        "How do prospective students usually go about applying for admission?",
+        "Can you share information on the usual steps for admission?",
+        "I'm looking to understand the general admission process better. Can you help?"
+      ],
+      "responses": [ "Are you a new student or a continuing student?" ]
+    },
+    {
+      "tag": "admission_process_new",
+      "patterns": [ "new student", "applying for the first time", "transfer student", "transferee", "i am a new student", "admission process for new student", "new", "what about for new" ],
+      "responses": [ "For new students, \n 1. Form 138 \n 2. PSA-issued Birth Certificate \n 3. Certificate of Good Moral \n 4. Certification for Eligibility to Transfer(for transferees) \n 5. Transcript of Record(for transferees) \n 6. Honorable Dismissal(for transferees) \n 7.2x2 Photo ID \n 8. Applicaion for Admission to Undergraduate Programs for New Applications(Online Form) \n For more information checkout the LSU website (https://lsu.edu.ph/) or contact these numbers 0915-043-6233/ 0998-174-3151." ]
+    },
+    {
+      "tag": "admission_process_continuing",
+      "patterns": [ "continuing student", "renewing admission", "i'm a continuing student", "i am a continuing student", "admission process for continuing student", "continuing", "what about for continuing" ],
+      "responses": [ "For continuing students, you only need to fill out the online form \n For more information checkout our FB page @ LSU - Admissions & Scholarship Center  or the LSU website (https://lsu.edu.ph/) \n You can also contact these numbers 0915-043-6233/ 0998-174-3151." ]
+    },
+    {
+      "tag": "admission_process_default",
+      "patterns": [ "I don't know", "not sure" ],
+      "responses": [ "I'm sorry, I couldn't determine if you are a new or continuing student. Can you please specify?" ]
+    },
+    {
+      "tag": "available_scholarships",
+      "patterns": [
+        "are there any scholarship offers",
+        "available scholarships in lsu",
+        "available scholarhips",
+        "scholarships available",
+        "scholarhip grants available",
+        "offered scholarships",
+        "scholarships that the school offers",
+        "what are the available scholarship",
+        "what are the available scholarships",
+        "Can you show me scholarships that are available?",
+        "are there any available scholarships? if so how to apply?",
+        "is this scholarship available?",
+        "What scholarships are available to be applied for?",
+        "is their any available scholarships at our school right now?",
+        "can you please share information about the available scholarships.",
+        "Are there any scholarships currently open for applications?",
+        "Are there any available scholarships?",
+        "What are the available scholarships this school offers?",
+        "Could you share details about the scholarships available for prospective students?",
+        "Are there any scholarships available in this school?",
+        "Asking for how much will be the coverage of such program and its qualifications",
+        "Are there scholarships available?",
+        "Is there any available scholarship for my course?",
+        "Is there any available scholarship?",
+        "Are there any available scholarships this year?",
+        "Are there any scholarships available for students?",
+        "Can you provide information on the different types of scholarships offered?",
+        "How can I apply for scholarships?",
+        "Are there merit-based scholarships?",
+        "What are the eligibility criteria for scholarships?",
+        "Can you tell me about need-based financial aid options?",
+        "Are there scholarships for specific majors or fields of study?",
+        "Do you offer scholarships for international students?",
+        "Are there athletic scholarships available?",
+        "What is the application process for scholarships?",
+        "Are there any deadlines for scholarship applications?",
+        "Are there any community service or leadership-based scholarships?"
+      ],
+      "responses": [
+        "\n We have three scholarships that are available:\n Br.Benildo Feliciano FSC Scholarship \n -For incoming Senior High School graduates who make it to the TOP 10 of a school's graduating class with at least 50 graduates \n Br.Arnold Reche FSC Scholarship \n -Given to financially challenged SHS graduates and/or college students in their sophomore year. \n Br.Cecilio Hojilla FSC Scholarship \n -Awarded to a qualified freshmen students who graduated Senior High School from both private and public schools \n What would you like to know?"
+      ]
+    },
+    {
+      "tag": "benildo-based",
+      "patterns": [ "Br. Benildo Feliciano", "Br. Benildo Feliciano FSC Scholarship", "Requirements for Br. Benildo Feliciano FSC", "What about Br. Benildo Felicaino FSC Scholarship" ],
+      "responses": [ " For Br. Benildo Feliciano FSC Scholarship: \n Rank No. 1 \n -100% Scholarship discount on tuition, miscallaneous and laboratory fees for one year (2 semesters) \n -Living Allowance of PHP 2,500.00 per semester \n -Free Dorm Accomodation (Non-Aircon room) Non convertible to cash \n -Enroll in any program \n Rank No. 2 \n - 100% Scholarship discount on tuition and miscellaneous for one year (2 semesters) \n -50% laboratory fees for 1 year (2 semesters) \n -Living Allowance of PHP 2,500 per semester \n -Free Dorm Accomodation (Non-aircon room) Non-convertible to cash \n -Enroll in any program \n Rank 3-10 \n -50% discount on tuition fee only \n -Enroll in any program \n Requirements \n -Certification from school indicating specific ranking from over-all Senior High School graudating class rank (not by class or strand) \n -Average rating in the entrance exam and interview administered by the Career and Counseling Center" ]
+    },
+    {
+      "tag": "arnold-based",
+      "patterns": [ "Br. Arnold Reche FSC", "Br. Arnold Reche FSC Scholarship", "Requirements for Br. Arnold Reche FSC", "What about Br. Arnold Rechce FSC Scholarship" ],
+      "responses": [ " For Bl.Br Arnold Reche FSC Scholarship: \n Preferably living outside Ozamiz City \n Free 21 units every semester & 9 units in summer \n Available to programs except BSCrim, BSN, BSHM & BSTM \n Requires the grantee to render 3 hours of duty every day, 18 hrs every week, 306 hrs per semester \n Reuirements \n -Senior High School Report Card \n -Certificate of Residency \n -Certificate of Indigency" ]
+    },
+    {
+      "tag": "cecilio-based",
+      "patterns": [ "Br. Cecilio Hojilla FSC", "Br. Cecilio Hojilla FSC Scholarship", "Requirements for Br. Cecilio Hojilla FSC", "What about Br. Cecilio Hojilla FSC Scholarship" ],
+      "responses": [ " For Br. Cecilio Hojilla FSC Scholarship: \n Enjoys 100% scholarship discount on tuition fee only \n General weighted average of at least 88% \n No grade below 80% in each subject in the finals and a GWA of at least 85% \n Monthly allowance of PHP1,000.00 \n Requirements \n -Senior High School Repost Card \n -Certificate of Residency" ]
+    },
+    {
+      "tag": "application",
+      "patterns": [
+        "application for scholarship",
+        "how to apply for a scholarship",
+        "scholarship application",
+        "how will i apply for a scholarship",
+        "ways to apply for a scholarship"
+      ],
+      "responses": [
+        "An applicant must secure a Scholarship and Grant Application Form. \n The form is to be submitted with the requirements which are detailed in the Checklist of Requirements for Scholarship and Grant Application. \n a. Br.Benildo Feliciano FSC \n -Certificate of Ranking \n b. Br.Arnorld Rache FSC Scholarship \n - Certificate of Indigency or Certificate of Text Exemption \n c. Br.Gregory Refuerzo FSC Scholarship \n - Photocopy of Certificate of Reconigtion \n For more information you may click this link https://bit.ly/LSUscholarshipform or visit Scholarhip and admission office (SAO)."
+      ]
+    },
+    {
+      "tag": "defer",
+      "patterns": [
+        "can i defer my scholarship if I defer my studies?",
+        "postpone my scholarship",
+        "can i defer my scholarship",
+        "scholarship postpone",
+        "scholarship defer",
+        "leave of absence",
+        "leave my studies"
+      ],
+      "responses": [
+        "Your scholarship may be temporarily suspended since the scholarship is granted for those who are currently enrolled and the the grantee need to maintain full-time student status to keep scholarship."
+      ]
+    },
+    {
+      "tag": "renewable",
+      "patterns": [
+        "is the scholarship renewable?",
+        "are scholarships renewable",
+        "renewable scholarshpis",
+        "scholarship renew",
+        "renew scholarship"
+      ],
+      "responses": [
+        "For Br. Arnold Reche FSC Program, yes, it is. For the other scholarship programs it may not be renewable. \n For more info you can visit the Scholarship and Admission Officer \n email: admission@lsu.edu.ph \n contact number:(088) 521-1010"
+      ]
+    },
+    {
+      "tag": "terms",
+      "patterns": [
+        "terms and conditions of the scholarship?",
+        "agreements for the scholarship",
+        "standards for scholarship",
+        "scholarship standards"
+      ],
+      "responses": [
+        "\n The applicant must meet the requirements for the scholarship.\n The applicant must be a Filipino Citizen. \n For Academic, the scholarship is granted to Top students, and must maintain all his/her grade and have a GPA of 1.75. \n For Non-Academic, scholarship is granted to those financially challenged applicants and must also maintain a final grade of all subject of atleast 80%. \n If you ever change your major or you shift into another course it will depends on the Scholarship Committee decision.\n For more detailed information visit Scholarhip and admission office (SAO)"
+      ]
+    },
+    {
+      "tag": "expenses",
+      "patterns": [
+        "scholarship for any school-related expenses",
+        "scholarship use for other expenses",
+        "scholarship used for any school-related expenses",
+        "the scholarship be used for any school-related expenses?"
+      ],
+      "responses": [
+        "No, scholarship is not use for any school-related or any other expenses."
+      ]
+    },
+    {
+      "tag": "transfer",
+      "patterns": [
+        "scholarship transfer student",
+        "transfer student for scholarship",
+        "apllying scholarship if i'm a transfer student",
+        "can a transfer student apply a scholarship"
+      ],
+      "responses": [
+        "Yes, provided that you strictly comply to the scholarships/grants requirements."
+      ]
+    },
+    {
+      "tag": "limit",
+      "patterns": [
+        "can i avail to two or more scholarship",
+        "two or more scholarship",
+        "limit for scholarship grant",
+        "number for scholarship receive"
+      ],
+      "responses": [
+        "A student may avail of no more than one internally funded scholarship/grant provided that he/she strictly complies to the scholarship’s/grant's requirement."
+      ]
+    },
+    {
+      "tag": "dropout",
+      "patterns": [
+        "grantee if i dropout",
+        "dropout of shool and a grantee",
+        "i drop out",
+        "school drop out"
+      ],
+      "responses": [
+        "If you dropout of school and your scholarship grantee, you may need to repay the scholarship but it depends on the decision of the Scholarship Committee."
+      ]
+    },
+    {
+      "tag": "financial situation change",
+      "patterns": [
+        "my financial situation change",
+        "financial situation changes",
+        "receiving scholarship after financial changes"
+      ],
+      "responses": [
+        "You may opt not to renew your scholarship and the Scholarship Commitee will look into it."
+      ]
+    },
+    {
+      "tag": "financial aid",
+      "patterns": [
+        "does scholarship affects other financial aid",
+        "recieving scholarship affect other financial aid",
+        "financial aid affected if i'm a scholarship grantee'"
+      ],
+      "responses": [
+        "Being a scholarship grantee will not affect your other financial aid."
+      ]
+    },
+    {
+      "tag": "disbursement",
+      "patterns": [
+        "problems with my scholarship disbursement",
+        "encounter problem with my scholarship disbursement",
+        "problem with scholarship disbursement"
+      ],
+      "responses": [
+        "Refer it to the Admissions and Scholarships Center."
+      ]
+    },
+    {
+      "tag": "part-time student",
+      "patterns": [
+        "scholarship if Im a part-time student",
+        "part time student apply scholarship",
+        "apply for scholarship if part-time student"
+      ],
+      "responses": [
+        "No, to be a scholarship grantee the applicant must be a full time student of La Salle University."
+      ]
+    },
+    {
+      "tag": "status",
+      "patterns": [
+        "scholarship status",
+        "who to contact for my scholarship status",
+        "scholarship statues"
+      ],
+      "responses": [
+        "If you have question about your current scholarship status it is best to visit the Admissions and Scholarships Center"
+      ]
+    },
+    {
+      "tag": "modality",
+      "patterns": [
+        "learning modality",
+        "learning modality of the school",
+        "learning modality of th university"
+      ],
+      "responses": [
+        "LSU adopts a BlendFlex (Blended Learning Flexible Experience ) model as an innovative course delivery method in delivering quality Lasallian education that offers Face-to-Face, Online, and Hybrid student experiences."
+      ]
+    },
+    {
+      "tag": "semester",
+      "patterns": [
+        "academic year schedule",
+        "semester schedule",
+        "semester timeable",
+        "semester dates"
+      ],
+      "responses": [
+        "Here is the Academic Calendar https://lsu.edu.ph/class-schedules"
+      ]
+    },
+    {
+      "tag": "tuition fee",
+      "patterns": [
+        "tuition fee cost",
+        "fee per semester",
+        "tuition fee per semester",
+        "how much is the tuition fee"
+      ],
+      "responses": [
+        "For tuition and other fees it may vary from the courses you will take, please visit the Accounting Office or email at finance@lsu.edu.ph for inquiries."
+      ]
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "facilities in the university",
+        "school facilities",
+        "how is the school facilities",
+        "facilities the school have",
+        "university facilities"
+      ],
+      "responses": [
+        "The University provides best facilities for the students, we are currently on a 5 year long developmental plan on improving the laboratories and the facilities of the university."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "sport programs",
+        "sports activities",
+        "programs for sports",
+        "sports and games",
+        "sports programs information"
+      ],
+      "responses": [
+        "Our university encourages all-round development of students and hence provides sports facilities in the campus. \n For more information visit the Sports and Wellness Center or visit their facebook page\n You can also contact through sports@lsu.edu.ph"
+      ]
+    },
+    {
+      "tag": "denied",
+      "patterns": [
+        "scholarship application denied",
+        "application for scholarship denied",
+        "my scholarship application denied"
+      ],
+      "responses": [
+        "Once your application for a scholarship program is denied you cannot take an appeal to apply it once more. "
+      ]
+    },
+    {
+      "tag": "international student",
+      "patterns": [
+        "can international student apply scholarship",
+        "scholarship on international students",
+        "international students applies scholarhsip"
+      ],
+      "responses": [
+        "International students cannot apply for scholarship programs,he/she must be a Filipino Citizen"
+      ]
+    },
+    {
+      "tag": "suggest",
+      "patterns": [
+        "you are useless",
+        "useless",
+        "suggest",
+        "suggestions",
+        "you are bad"
+      ],
+      "responses": [
+        "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+      ]
+    },
+    {
+      "tag": "riddle",
+      "patterns": [
+        "Ask me a riddle",
+        "Ask me a question",
+        "Riddle"
+      ],
+      "responses": [
+        "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+        "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+        " How can a girl go 25 days without sleep?.....She sleeps and night!",
+        "How do you make the number one disappear?.....Add the letter G and it's 'gone'!",
+        " What will you actually find at the end of every rainbow?.....The letter 'w'",
+        "What can be caught but never thrown?.....A cold!",
+        "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+        " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+        "Why can't a bike stand on it's own?.....It is two-tired."
+      ],
+      "context": [
+        "riddles"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "when were you made",
+        "what is your age"
+      ],
+      "responses": [
+        "I was made in 2023, if that's what you are asking!"
+      ]
+    },
+
+    {
+      "tag": "TES application open for all year levels",
+      "patterns": [
+        "Is TES application open for all year levels?",
+        "TES application open for all year levels",
+        "TES application available for all year"
+      ],
+      "responses": [
+        "Only College level can apply for TES"
+      ]
+    },
+
+    {
+      "tag": "TES application available",
+      "patterns": [
+        "is TES application available",
+        "does the university offers TES application",
+        "does the college offers TES",
+        "does the school offers TES",
+        "does TES scholarship available",
+        "does TES scholarship available",
+        "Is TES available in La Salle?",
+        "TES offered in La Salle",
+        "Is TES available in your school?",
+        "Are the TES scholarships available for this school year?",
+        "Excuse me Is their any TES scholarship available for  students?",
+        "Is the TES scholarships available?",
+        "Could you provide information on the availability of TES scholarships?",
+        "Is TES still available?"
+
+      ],
+      "responses": [
+        "Yes, we offer TES applications"
+      ]
+    },
+
+    {
+      "tag": "government scholarship",
+      "patterns": [
+        "can i still get other government scholarship if im already a TES grantee",
+        "get other scholarship if im already TES grantee",
+        "can i get other government scholarship if already TES grantee"
+      ],
+      "responses": [
+        "You can not, specially you are currenly a government scholarship grantee."
+      ]
+    },
+
+    {
+      "tag": "Can a transfer student be still be a TES grantee",
+      "patterns": [
+        "can a transfer student be still be a TES grantee",
+        "if i transfer school, will I be a TES grantee",
+        "if i transfer student, will I be a TES grantee"
+      ],
+      "responses": [
+        "Yes, transfer student still be TES grantee"
+      ]
+    },
+    {
+      "tag": "TES",
+      "patterns": [
+        "what is TES",
+        "what is TES for",
+        "what's TES"
+      ],
+      "responses": [
+        " \n Tertiary Education Subsidy or TES \n -Grants free tuition and other school fees for CHED - Recognized, Quality Assured, Private Higher Education Institutions \n It is provided by CHED and UNIFAST"
+      ]
+    },
+    {
+      "tag": "How do I know If I got delisted for TES",
+      "patterns": [
+        "how do I know If I got delisted for TES",
+        "do I know If I got delisted for TES",
+        "do I know I got delisted for TES"
+      ],
+      "responses": [
+        "The Admission and Scholarship Office contacts you if you got delisted."
+      ]
+    },
+
+    {
+      "tag": "how to apply TES",
+      "patterns": [
+        "how to apply TES",
+        "apply TES",
+        "the requirments for TES",
+        "how to avail for TES",
+        "Can you provide details on the availability and criteria for TES scholarships, if they are offered?",
+        "what are the requirements for TES?.",
+        "Can I apply for TES?"
+
+      ],
+      "responses": [
+        "For TES application please contact or visit the Scholarship Office. \n You can also get an appiontment through this link: https://registrar.lsu.edu.ph/tes"
+      ]
+    }
+  ]
+}
